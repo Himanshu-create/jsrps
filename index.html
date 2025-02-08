@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Shree Ram Public School - One Page Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <style>
+        .slider-home img {
+            width: 400px;
+            height: 600px;
+            object-fit: auto;
+        }
+        .slider-gallery img {
+            width: 1300px;
+            height: 350px;
+            object-fit: auto;
+        }
+    </style>
+
+</head>
+<body class="bg-orange-100 font-sans">
+    <header class="bg-orange-600 text-white text-center p-5 text-3xl font-bold flex items-center justify-center">
+        <img src="./img/logo-removebg-preview.png" alt="School Logo" class="h-12 mr-3"> Jai Shree Ram Public School Kochas
+    </header>
+    
+    <nav class="bg-orange-500 text-white p-3 text-center">
+        <a href="#home" class="mx-4">Home</a>
+        <a href="#about" class="mx-4">About Us</a>
+        <a href="#courses" class="mx-4">Courses</a>
+        <a href="#gallery" class="mx-4">Gallery</a>
+        <a href="#contact" class="mx-4">Contact</a>
+    </nav>
+    
+    <section id="home" class="p-10 text-center">
+        <!-- <h2 class="text-3xl font-bold text-orange-700">Welcome to Jai Shree Ram Public School, Kochas</h2> -->
+        <div class="slider-home mt-5 ">
+            <img src="./img/slider2.png" alt="Feature 1" class="rounded-lg shadow-md">
+            <img src="./img/slider1.jpg" alt="Feature 2" class="rounded-lg shadow-md">
+            <!-- <img src="./img/slider3.png" alt="Feature 3" class="rounded-lg shadow-md"> -->
+            <img src="./img/p2.png" alt="Feature 4" class="rounded-lg shadow-md">
+        </div>
+    </section>
+    
+    <section id="about" class="p-10 bg-orange-200 text-center">
+        <h2 class="text-3xl font-bold text-orange-700">About Us</h2>
+        <p class="text-gray-700 mt-2">
+            <b>Jai Shree Ram Public School</b>, established in 2010, has been a beacon of <b>quality education, fostering academic excellence and holistic development</b>. Affiliated with <b>CBSE</b> up to Class 8 and providing education up to Class 10, the school has built a strong reputation for nurturing young minds with a <b>balanced curriculum of academics, sports, and co-curricular activities</b>. Over the years, the institution has witnessed tremendous growth, both in student enrollment and <b>the trust it has earned from parents and the community</b>. With a dedicated team of <b>highly qualified teachers, infrastructure, and a commitment to innovation in learning, </b> the school ensures that every child receives the best educational experience. Jai Shree Ram Public School focuses on instilling strong <b>moral values, leadership qualities, and critical thinking skills, preparing students for a bright future</b>. The institution takes pride in its well-equipped classrooms, modern laboratories, a vast library, and ample sports facilities that <b>promote overall personality development</b>. Our mission is to empower students with knowledge, discipline, and confidence, enabling them to <b>excel in all walks of life.     </b>   </p>
+    </section>
+    
+    <section id="courses" class="p-5 text-center">
+        <h2 class="text-3xl font-bold text-orange-700">Our Courses</h2>
+    </section>
+
+    <section id="courses2" class="p-0 text-center flex items-center justify-center">
+        <img src="https://logowik.com/content/uploads/images/cbse-central-board-of-secondary-education-colored7663.jpg" alt="CBSE Logo" class="h-32 mr-5">
+        <h2 class="text-2xl font-bold text-orange-700">We follow Class NC to Xth CBSE curriculum</h2>
+    </section>
+    
+    <br>
+    <br>
+
+    <section id="gallery" class="p-10 bg-orange-200 text-center">
+        <h2 class="text-3xl font-bold text-orange-700">Gallery</h2>
+        <div class="slider-gallery mt-5">
+            <img src="./img/g1.png" class="rounded-lg shadow-md">
+            <img src="./img/g2.png" class="rounded-lg shadow-md">
+            <img src="./img/g3.png" class="rounded-lg shadow-md">
+            
+            <img src="./img/g5.png" class="rounded-lg shadow-md">
+            <img src="./img/g4.jpg" class="rounded-lg shadow-md">
+            <!-- <img src="https://source.unsplash.com/300x200/?teachers" class="rounded-lg shadow-md">
+            <img src="https://source.unsplash.com/300x200/?playground" class="rounded-lg shadow-md"> -->
+        </div>
+    </section>
+    
+    <section id="contact" class="p-10 text-center">
+        <h2 class="text-3xl font-bold text-orange-700">Contact Us</h2>
+        <br>
+        <p class="text-gray-700 mt-2">Email: jaishreerampublicschool@gmail.com</p>
+        <br>
+        <p class="text-gray-700">Mr. Ravindra Singh <i>(Director)</i> | Phone:  +91 8084489651 </p>
+        <p class="text-gray-700">Er. Manoj Kumar <i>(Principal)</i> | Phone:  +91 7004206282 </p>
+    </section>
+    
+    <footer class="bg-orange-600 text-white text-center p-4 mt-5">
+        &copy; 2025 Jai Shree Ram Public School. All Rights Reserved. | developer & Maintainer: paperwithcode@gmail.com
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+            $('.slider-home').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false
+            });
+            
+            $('.slider-gallery').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+</html>
